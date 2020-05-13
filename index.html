@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Top Box Office</title>
+	<link href="images/icon.jpg" rel="icon">
+
+	<!-- Link with css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="navbar">
+		<div id="Main-nav">
+			<h1>
+			<a href="#">Box Office</a>
+			</h1>
+		</div>
+	</header>
+	<div class="start-page" display >
+			<h2>Show some of my Grid system</h2>
+			<div class=""><p>This is simple movies search browser press Start</p></div>
+			<div class="enter-btn">
+				<button type="button" onclick="start()">Start</button>
+			</div>
+	</div>
+	<div class="container">	
+	
+	<div class="content">
+		<div class="search-bar">
+			<input type="text" name="text" class="text" onkeypress="if (event.keyCode == 13) {
+				return search();
+			}">
+			<br>
+			<button type="button" id="search-btn" onclick="search()">Search</button>
+		</div>
+			<div class="movies-container">
+					<div class="movie">
+						<div class="movie-title"><h3>Iron Man</h3></div>
+						<div class="movie-icon"><img src="images/iron-man-3.jpg"></div>
+						<div class="movie-date"><p>2013</p></div>
+					</div>
+			
+				<div class="movie">
+					<div class="movie-title"><h3>Bad Moms</h3></div>
+					<div class="movie-icon"><img src="images/bad-moms.jpg"></div>
+					<div class="movie-date"><p>2016</p></div>
+				</div>
+				<div class="movie">
+					<div class="movie-title"><h3>Avengers Endgame</h3></div>
+					<div class="movie-icon"><img src="images/avengers.jpg"></div>
+					<div class="movie-date"><p>2019</p></div>
+				</div>
+				<div class="movie">
+					<div class="movie-title"><h3>Deadpool</h3></div>
+					<div class="movie-icon"><img src="images/deadpool.jpeg"></div>
+					<div class="movie-date"><p>2017</p></div>
+				</div>
+				<div class="movie">
+					<div class="movie-title"><h3>The Fast Saga</h3></div>
+					<div class="movie-icon"><img src="images/fast9.jpg"></div>
+					<div class="movie-date"><p>2020</p></div>
+				</div>
+				<div class="movie">
+					<div class="movie-title"><h3>Wonder Woman</h3></div>
+					<div class="movie-icon"><img src="images/wonderwoman.jpg"></div>
+					<div class="movie-date"><p>2019</p></div>
+				</div>
+				<div class="excuse"><p>Sorry We couldn't find any match</p></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Add the Javascript link -->
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
